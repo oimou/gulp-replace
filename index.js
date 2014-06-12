@@ -19,7 +19,11 @@ module.exports = function(search, replacement) {
 
     if (isBuffer) {
       if (isRegExp) {
-        file.contents = new Buffer(String(file.contents).replace(search, replacement));
+        file.contents = new Buffer(String(file.contents).replace(search, function () {
+          var args = Array.prototype.slice.call(arguments);
+          args.push(file);
+          return replacement.apply(this, args);
+        }));
       }
       else {
         var chunks = String(file.contents).split(search);
