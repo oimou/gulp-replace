@@ -1,6 +1,6 @@
 {
   "name": "gulp-replace",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A string replace plugin for gulp",
   "main": "index.js",
   "dependencies": {
@@ -17,16 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lazd/gulp-replace.git"
+    "url": "git://github.com/oimou/gulp-replace.git"
   },
   "keywords": [
     "gulpplugin",
     "replace"
   ],
-  "author": "Larry Davis <lazdnet@gmail.com>",
+  "author": "Keiji Yahata <s1190013@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lazd/gulp-replace/issues"
+    "url": "https://github.com/oimou/gulp-replace/issues"
   },
   "engines": {
     "node": ">=0.8"
